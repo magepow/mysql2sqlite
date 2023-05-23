@@ -17,7 +17,7 @@ Converts MySQL dump to SQLite3 compatible dump (including MySQL `KEY xxxxx` stat
     ~~~~
     ./mysql2sqlite dump_mysql.sql | sqlite3 mysqlite3.db
     # or
-    ./mysql2sqlite dump_mysql.sql | sqlite3 database.sqlite
+    ./mysql2sqlite database.sql | sqlite3 database.sqlite
     ~~~~
 
 (both `mysql2sqlite` and `sqlite3` might write something to stdout and stderr - e.g. `memory` coming from `PRAGMA journal_mode = MEMORY;` is not harmful)
