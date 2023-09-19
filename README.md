@@ -15,6 +15,8 @@ Converts MySQL dump to SQLite3 compatible dump (including MySQL `KEY xxxxx` stat
 1. Convert the dump to SQLite3 DB
 
     ~~~~
+    ln -s `pwd`/mysql2sqlite /usr/bin/mysql2sqlite
+    
     ./mysql2sqlite dump_mysql.sql | sqlite3 mysqlite3.db
     # or
     ./mysql2sqlite database.sql | sqlite3 database.sqlite
